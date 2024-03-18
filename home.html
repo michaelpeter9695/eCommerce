@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Shop</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      header {
+        background-color: #333;
+        padding: 10px;
+        color: #fff;
+        text-align: center;
+        display: none; /* Initially hide the header */
+      }
+
+      nav {
+        background-color: #444;
+        padding: 10px;
+        text-align: center;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 5px;
+      }
+
+      main {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <h1>Your Shop</h1>
+      <button id="toggle-nav">Toggle Navigation</button>
+      <nav id="main-nav">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+        <!-- Add more navigation links as needed -->
+      </nav>
+    </header>
+
+    <main>
+      <!-- Your shop content goes here -->
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get elements
+        var header = document.getElementById("main-header");
+        var nav = document.getElementById("main-nav");
+        var toggleButton = document.getElementById("toggle-nav");
+
+        // Toggle navigation visibility
+        toggleButton.addEventListener("click", function () {
+          nav.style.display = nav.style.display === "none" ? "block" : "none";
+        });
+
+        // Show the header after the page has loaded
+        header.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

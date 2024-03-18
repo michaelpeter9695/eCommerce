@@ -1,0 +1,365 @@
+.bg-green {
+    background-color: green;
+    color: white;
+}
+
+.rounded-radius {
+    border-radius: 50%;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload_btn {
+    border: 1px solid #ced4da;
+    color: gray;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.bubble {
+    position: absolute;
+    bottom: -100px;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: rise 10s infinite ease-in;
+}
+
+.bubble:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left: 10%;
+    animation-duration: 8s;
+    /* Animation speed */
+}
+
+.bubble:nth-child(2) {
+    width: 20px;
+    height: 20px;
+    left: 20%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(3) {
+    width: 50px;
+    height: 50px;
+    left: 35%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    animation-duration: 11s;
+    animation-delay: 0s;
+}
+
+.bubble:nth-child(5) {
+    width: 35px;
+    height: 35px;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(6) {
+    width: 45px;
+    height: 45px;
+    left: 65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+
+.bubble:nth-child(7) {
+    width: 90px;
+    height: 90px;
+    left: 70%;
+    animation-duration: 12s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(8) {
+    width: 25px;
+    height: 25px;
+    left: 80%;
+    animation-duration: 6s;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(9) {
+    width: 15px;
+    height: 15px;
+    left: 70%;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(10) {
+    width: 90px;
+    height: 90px;
+    left: 25%;
+    animation-duration: 10s;
+    animation-delay: 4s;
+}
+
+@keyframes rise {
+    0% {
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    50% {
+        transform: translate(100px);
+    }
+    100% {
+        bottom: 1080px;
+        transform: translateX(-200px);
+    }
+}
+
+/* .form_pin {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  .input_pin {
+    margin: 3px;
+    padding: 0.5rem;
+    border: 1px solid #dbdbdb;
+    width: 40px;
+    height: 37px;
+    text-align: center;
+    font-size: 3rem;
+    border-radius: 4px;
+  }
+   */
+
+.form_pin {
+    display: flex;
+    justify-content: center;
+}
+
+.pincode-input-text {
+    padding: 0 !important;
+    margin: 0 2px;
+    text-align: center;
+    border: 1px solid grey !important;
+    border-radius: 5px;
+    background: transparent;
+    width: 35px !important;
+    height: 35px !important;
+}
+
+.pincode-input-text:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* 
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: rgb(0 0 0 / 23%);
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.overlay-content {
+    position: absolute;
+    transform: translateY(-50%);
+     -webkit-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #555;
+} */
+
+.stamp {
+    box-shadow: 0 0 0 3px #0000ff3b, 0 0 0 2px #eaf5ec57 inset;
+    border: 3px dashed #4a89dc9e;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px 2px;
+    line-height: 22px;
+    color: #0000ff85;
+    font-size: 20px;
+    font-weight: 900;
+    /* font-family: 'Black Ops One', cursive; */
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.1;
+    width: auto;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 250px;
+    left: 95px;
+}
+
+.data_card_transform {
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.bg-red {
+    background-color: #ff1100 !important;
+    /* border: none !important; */
+}
+
+/* Layout control */
+
+@media only screen and (max-width: 768px) {
+    .login_card {
+        /* margin: 50%; */
+        /* box-shadow: none; */
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .login_card {
+        margin: 0px 400px;
+        box-shadow: none !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .login_card {
+        margin: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .login_card {
+        margin: 0px 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .login_card {
+        margin: 0px 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .login_card {
+        margin: 0px 400px;
+    }
+}
+
+.page-content {
+    padding-bottom: 120px !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+
+/* @media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .dashboard-layout {
+        margin: 0px 150px !important;
+    }
+    .card-style {
+        /* box-shadow: none !important; */
+        box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    }
+    body {
+        /* background-color: #e5e5e5 !important; */
+        background-color: white !important;
+    }
+    .lg_card_raise {
+        box-shadow: rgb(50 50 93 / 25%) 0px 50px 100px -20px, rgb(0 0 0 / 30%) 0px 30px 60px -30px;
+        padding: 10px 10px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+}
+
+.tranx_service_font {
+    font-family: 'Uchen', serif !important;
+}
+
+.blink {
+    animation: blink 3s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.vertical-line {
+    border-left: 1px solid rgb(255, 255, 255);
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 60px;
+}

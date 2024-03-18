@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div
+      id="menu-main"
+      class="menu menu-box-left rounded-0 menu-active"
+      data-menu-width="280"
+      data-menu-active="nav-pages"
+      style="display: block; width: 280px"
+    >
+      <div class="card rounded-0 bg-6" style="height: 150px">
+        <div class="card-top">
+          <a
+            href="#"
+            class="close-menu float-end me-2 text-center mt-3 icon-40 notch-clear"
+            ><i class="fa fa-times color-white"></i
+          ></a>
+        </div>
+        <div class="card-bottom">
+          <h1 class="color-white ps-3 mb-n1 font-28">Swiftdatalink</h1>
+          <p class="mb-2 ps-3 font-12 color-white opacity-50">
+            Navigation Menu
+          </p>
+        </div>
+        <div class="card-overlay bg-gradient"></div>
+      </div>
+      <div class="mt-4"></div>
+      <h6 class="menu-divider">GO TO 👇</h6>
+      <div class="list-group list-custom-small list-menu">
+        <a id="nav-welcome" href="/"
+          ><i class="fab fa-microsoft gradient-red color-white"></i>
+          <span>Home</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/transaction"
+          ><i class="fab fa-opencart gradient-teal color-white"></i>
+          <span>Transaction</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/data"
+          ><i class="fa fa-wifi gradient-green color-white"></i>
+          <span>Buy Data</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/airtime"
+          ><i class="fa fa-phone gradient-blue color-white"></i>
+          <span>Buy Airtime</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/cable"
+          ><i class="fa fa-tv gradient-brown color-white"></i>
+          <span>Cable Subscription</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/electricity"
+          ><i class="fa fa-lightbulb gradient-magenta color-white"></i>
+          <span>Electricity Payment</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/recharge-pin"
+          ><i class="fa fa-envelope gradient-teal color-white"></i>
+          <span>Recharge Card Pin</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/exam"
+          ><i class="fa fa-envelope gradient-orange color-white"></i>
+          <span>Exam Result Pin</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/spectranet"
+          ><i class="fas fa-layer-group gradient-green color-white"></i>
+          <span>Spectranet</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/smile"
+          ><i class="fas fa-smile gradient-blue color-white"></i>
+          <span>Smile</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/airtime-cash"
+          ><i class="fas fa-dollar-sign gradient-brown color-white"></i>
+          <span>Airtime To Cash</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/bulk-sms"
+          ><i class="fa fa-sms gradient-magenta color-white"></i>
+          <span>Bulk SMS</span> <i class="fa fa-angle-right"></i
+        ></a>
+      </div>
+      <h6 class="menu-divider mt-4">Account</h6>
+      <div class="list-group list-custom-small list-menu">
+        <a href="/profile"
+          ><i class="fa fa-user gradient-highlight color-white"></i>
+          <span>Profile</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/reset-pin"
+          ><i class="fa fa-key gradient-orange color-white"></i>
+          <span> Reset PIN </span> <i class="fa fa-angle-right"></i
+        ></a>
+      </div>
+      <h6 class="menu-divider mt-4">Referral</h6>
+      <div class="list-group list-custom-small list-menu">
+        <a href="/referral/log"
+          ><i class="fa fa-users gradient-highlight color-white"></i>
+          <span>Log/Earnings</span> <i class="fa fa-angle-right"></i
+        ></a>
+      </div>
+      <h6 class="menu-divider mt-4">Developers</h6>
+      <div class="list-group list-custom-small list-menu">
+        <a href="https://server.swiftdatalink.com/api/documentation"
+          ><img src="/dashboard/images/api.png" />
+          <span>API Documentation</span> <i class="fa fa-angle-right"></i></a
+        ><a href="/pricing">
+          <i class="fa fa-code gradient-brown color-white"></i>
+          <span>Product Code / Pricing</span> <i class="fa fa-angle-right"></i
+        ></a>
+      </div>
+      <div class="list-group list-custom-small list-menu">
+        <a>
+          <i class="fa fa-power-off gradient-red color-white"></i>
+          <span>Log Out</span> <i class="fa fa-angle-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <div>
+      <div
+        class="card card-style ms-3 mb-2"
+        style="
+          border-bottom-left-radius: 0px;
+          border-top-right-radius: 0px;
+          background-image: linear-gradient(
+            to right,
+            rgb(92, 204, 151),
+            rgb(31, 64, 55)
+          );
+          height: 415px;
+        "
+      >
+        <div class="card-top px-3 py-3">
+          <h1 class="color-white font-20 float-start">Welcome 👋</h1>
+          <a
+            class="bg-white color-black rounded-sm btn btn-xs float-end scale-box font-700 font-12"
+            href="/fund-wallet"
+            ><i class="fas fa-wallet" style="font-weight: 600"></i> Fund
+            Wallet</a
+          >
+        </div>
+        <div
+          style="
+            background: rgba(255, 255, 255, 0.17);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: relative;
+            top: -30px;
+            left: -25px;
+          "
+        ></div>
+        <div
+          style="
+            background: rgba(255, 255, 255, 0.17);
+            width: 135px;
+            height: 135px;
+            border-radius: 50%;
+            position: relative;
+            top: -145px;
+            left: 40px;
+          "
+        ></div>
+        <div class="card-center pe-3" style="padding-bottom: 25px; top: 40%">
+          <h1
+            class="color-white text-center font-26"
+            style="padding-bottom: 0px; margin-bottom: -4px"
+          >
+            ₦35
+          </h1>
+          <p class="color-white opacity-50 font-12 text-center">
+            Wallet Balance
+          </p>
+        </div>
+        <div
+          class="card-right"
+          style="
+            background: rgb(255, 255, 255);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            position: relative;
+            top: 195px;
+            left: 250px;
+          "
+        ></div>
+        <div class="card-bottom px-3 py-0">
+          <h5
+            class="color-white text-start font-19"
+            style="margin-bottom: -9px; line-height: 0px"
+          >
+            Michael
+          </h5>
+          <h5 class="color-white text-end font-19">Peter</h5>
+          <div class="divider bg-white opacity-20 mb-1"></div>
+          <div class="d-flex">
+            <div class="align-self-center">
+              <img
+                src="/dashboard/images/notification.png"
+                class="rounded-xl"
+                width="25"
+              />
+            </div>
+            <div class="align-self-center">
+              <span class="ps-3 font-11 opacity-70 font-600 color-white"
+                ><marquee direction="left" scrollamount="2"></marquee
+              ></span>
+            </div>
+          </div>
+          <div class="divider bg-white opacity-20 mb-1"></div>
+          <div
+            style="
+              margin-bottom: 10px;
+              display: flex;
+              justify-content: space-between;
+            "
+          >
+            <p
+              class="float-start mb-0"
+              style="line-height: 37px; font-weight: bold; color: white"
+            >
+              Status:
+              <a href="/kyc">
+                <span class="badge badge-success bg-danger">
+                  not verified
+                  <i class="fas fa-exclamation-triangle text-warning"></i>
+                </span>
+              </a>
+            </p>
+            <div class="mt-2">
+              <img
+                src="/dashboard/images/mtn.png"
+                class="rounded-xl"
+                width="25"
+              /><img
+                src="/dashboard/images/glo.png"
+                class="rounded-xl ms-n2"
+                width="25"
+              /><img
+                src="/dashboard/images/airtel.png"
+                class="rounded-xl ms-n2"
+                width="25"
+              /><img
+                src="/dashboard/images/9mobile.png"
+                class="rounded-xl ms-n2"
+                width="25"
+                style="background: rgb(255, 255, 255)"
+              />
+            </div>
+            <img
+              src="/images/avatars/5s.png"
+              class="float-end rounded-m"
+              width="35"
+            />
+          </div>
+          <div style="margin-bottom: 5px">
+            <div class="divider bg-white opacity-20 mb-1"></div>
+            <a
+              href="https://play.google.com/store/apps/details?id=swiftdatalink.com"
+              ><img
+                src="/dashboard/images/google_play_btn.png"
+                width="155px"
+                style="margin-left: -10px" /></a
+            ><a
+              class="rounded-sm btn float-end font-700 font-12"
+              href="/upgrade-account"
+              style="
+                color: rgb(255, 255, 255);
+                border: 1px solid rgb(139, 195, 74);
+                margin-top: 8px;
+                padding: 2px 12px;
+                max-width: 130px;
+              "
+              >👉 Become our agent 🚀</a
+            >
+          </div>
+        </div>
+        <div
+          class="card-overlay bg-gradient opacity-30"
+          style="border-radius: 0px"
+        ></div>
+        <div class="card-overlay bg-gradient" style="border-radius: 0px"></div>
+      </div>
+    </div>
+    <div>
+      <div class="Toastify"></div>
+      <div class="card card-style mb-1 mt-2 ReferralCard_Rcard__ns5Cd">
+        <div class="content mt-3 mb-2">
+          <div class="d-flex">
+            <div class="me-2">
+              <img
+                src="/dashboard/images/refer-people.png"
+                class="rounded-s shadow-xl"
+                style="width: 50px; height: 40px"
+              />
+            </div>
+            <div>
+              <h5>Refer &amp; Earn</h5>
+              <p
+                class="mb-0 mt-n2 font-11 font-400"
+                style="line-height: 19px; word-break: break-all"
+              >
+                https://app.swiftdatalink.com/register?ref=Peter9695
+              </p>
+            </div>
+            <div class="ms-auto">
+              <a
+                href="#"
+                class="icon icon-s bg-theme shadow-xl rounded-xl float-end"
+                style="border: 1px dashed rgb(170, 142, 105)"
+                ><i
+                  class="fa color-theme fa-copy"
+                  style="width: 39px; height: 39px"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr
+          style="
+            margin-bottom: 1px;
+            margin-top: 1px;
+            background-color: rgb(255, 255, 255);
+            border: 0px double rgb(35, 99, 154);
+            opacity: 0.7;
+          "
+        />
+        <div
+          class="text-center font-11 opacity-100 mb-0 pb-2 pt-2 ReferralCard_ReferralTxt__DbrH-"
+          style="
+            border-top: 1px solid rgb(96, 125, 139);
+            border-bottom: 1px solid red;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+          "
+        >
+          <i>
+            <b
+              >Share out your app.swiftdatalink.com referral link to poeple and
+              earn 💰 ₦0 immediately the person 🚀 upgrade his/her account to
+              our agent package.</b
+            >
+          </i>
+          <div style="color: rgb(0, 80, 175)">
+            <b>Commission Balance: ₦0</b>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between">
+          <div>
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u=https://app.swiftdatalink.com/register?ref=Peter9695"
+              class="shareToFacebook icon-xl text-center"
+              ><i class="fab fa-facebook-f font-14 color-facebook"></i
+            ></a>
+          </div>
+          <div>
+            <a class="shareToTwitter icon-xl text-center"
+              ><i class="fab fa-twitter font-14 color-twitter"></i
+            ></a>
+          </div>
+          <div>
+            <a
+              href="whatsapp://send?text=Hello, register on https://app.swiftdatalink.com/register?ref=Peter9695 to start buying cheap data and airtime today!"
+              data-action="share/whatsapp/share"
+              class="shareToWhatsApp icon-xl text-center"
+              ><i class="fab fa-whatsapp font-14 color-whatsapp"></i
+            ></a>
+          </div>
+          <div>
+            <a class="shareToInstagram icon-xl text-center"
+              ><i class="fab fa-instagram font-14 color-instagram"></i
+            ></a>
+          </div>
+          <div>
+            <a class="shareToMail icon-xl text-center"
+              ><i class="fa fa-envelope font-14 color-mail"></i
+            ></a>
+          </div>
+          <div>
+            <a class="shareToCopyLink icon-xl text-center"
+              ><i class="fa fa-link font-14 color-dark-dark"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="content mb-0 mt-3">
+        <div class="row mb-0">
+          <div class="col-6 Services_CardPaddingRight__F7iP8">
+            <a href="/data"
+              ><div
+                class="card card-style mx-0 mb-2 p-3"
+                style="
+                  border-radius: 15px;
+                  margin: -7px 15px 30px;
+                  height: 125px;
+                "
+              >
+                <h6 class="font-13 text-center">Data Topup</h6>
+                <h3 class="color-red-dark mb-0 text-center pt-2">
+                  <img src="/dashboard/images/data.jpg" style="width: 58px" />
+                </h3></div
+            ></a>
+          </div>
+          <div class="col-6 ps-1 Services_CardPaddingLeft__09RWV">
+            <a href="/airtime"
+              ><div
+                class="card card-style mx-0 mb-2 p-3"
+                style="
+                  border-radius: 15px;
+                  margin: -7px 15px 30px;
+                  height: 125px;
+                "
+              >
+                <h6 class="font-13 text-center">Airtime Topup</h6>
+                <h3 class="color-green-dark mb-0 text-center pt-2">
+                  <img
+                    src="/dashboard/images/airtime.svg"
+                    style="width: 63px"
+                  />
+                </h3></div
+            ></a>
+          </div>
+          <div class="col-6 pe-1 Services_CardPaddingRight__F7iP8">
+            <a href="/exam"
+              ><div
+                class="card card-style mx-0 mb-2 p-3"
+                style="
+                  border-radius: 15px;
+                  margin: -1px 15px 30px;
+                  height: 125px;
+                "
+              >
+                <h6 class="font-13 text-center">Result Checker</h6>
+                <h3 class="color-red-dark mb-0 text-center pt-2">
+                  <img
+                    src="/dashboard/images/graduation-cap.png"
+                    style="width: 83px"
+                  />
+                </h3></div
+            ></a>
+          </div>
+          <div class="col-6 ps-1 Services_CardPaddingLeft__09RWV">
+            <a href="/spectranet"
+              ><div
+                class="card card-style mx-0 mb-2 p-3"
+                style="
+                  border-radius: 15px;
+                  margin: -1px 15px 30px;
+                  height: 125px;
+                "
+              >
+                <h6 class="font-13 text-center">Spectranet</h6>
+                <h3 class="color-green-dark mb-0 text-center pt-2">
+                  <img
+                    src="/dashboard/images/spectranet-device.png"
+                    style="width: 78px"
+                  />
+                </h3></div
+            ></a>
+          </div>
+          <div class="col-6 pe-1 Services_CardPaddingRight__F7iP8">
+            <a href="/recharge-pin"
+              ><div
+                class="card card-style mx-0 mb-2 p-3"
+                style="
+                  border-radius: 15px;
+                  margin: -1px 15px 30px;
+                  height: 125px;
+                "
+              >
+                <h6 class="font-13 text-center">Recharge Card</h6>
+                <h3 class="color-green-dark mb-0 text-center pt-2">
+                  <img
+                    src="dashboard/images/recharge-card-printer.png"
+                    style="width: 68px"
+                  />
+                </h3></div
+            ></a>
+          </div>
+          <div class="col-6 ps-1 Services_CardPaddingLeft__09RWV">
+            <a href="/smile"
+              ><div
+                class="card card-style mx-0 mb-2 p-3"
+                style="
+                  border-radius: 15px;
+                  margin: -1px 15px 30px;
+                  height: 125px;
+                "
+              >
+                <h6 class="font-14 text-center">Smile Bundle</h6>
+                <h3 class="color-green-dark mb-0 text-center pt-2">
+                  <img src="dashboard/images/smile.png" style="width: 58px" />
+                </h3></div
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="content mb-0" style="margin: -1px 15px 30px">
+        <div class="d-flex"></div>
+        <div class="row mb-0">
+          <div class="col-6 pe-1 Services_CardPaddingRight__F7iP8">
+            <a href="/cable"
+              ><div
+                class="card card-style mx-0 Services_card_image_bg__+Nd6B"
+                style="
+                  border-radius: 15px;
+                  background-image: url('dashboard/images/multichoice-banner.jpg');
+                  height: 150px;
+                  background-size: cover;
+                "
+              >
+                <div class="card-bottom p-3" style="left: -5px">
+                  <h2 class="color-white font-15 text-center">Cable</h2>
+                  <p class="color-white opacity-90 line-height-s font-11">
+                    Enjoy an instantly activated Subscriptions on your GOTV,
+                    DSTV, SHOWMAX &amp; STARTIMES now!!!.
+                  </p>
+                </div>
+                <div
+                  class="card-overlay bg-gradient opacity-30 Services_serviceGradient__5igr+"
+                ></div>
+                <div class="card-overlay bg-gradient"></div></div
+            ></a>
+          </div>
+          <div class="col-6 ps-1 Services_CardPaddingLeft__09RWV">
+            <a href="/airtime-cash"
+              ><div
+                class="card card-style mx-0 mb-0 Services_card_image_bg__+Nd6B"
+                style="
+                  border-radius: 15px;
+                  background-image: url('dashboard/images/recharge-card-business.jpg');
+                  height: 150px;
+                  background-size: cover;
+                "
+              >
+                <div class="card-bottom p-3" style="left: -5px">
+                  <h2 class="color-white font-15 text-center">
+                    Airtime To Cash 💰
+                  </h2>
+                  <p class="color-white opacity-90 line-height-s font-11">
+                    Convert airtime loaded in error or excess airtime back to
+                    cash now!!!. Payment 💯% is swift
+                  </p>
+                </div>
+                <div
+                  class="card-overlay bg-gradient opacity-30 Services_serviceGradient__5igr+"
+                ></div>
+                <div class="card-overlay bg-gradient"></div></div
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card card-style shadow-bg shadow-bg-m Services_electricityCard__RwTuk"
+      >
+        <div
+          style="
+            line-height: 60px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+          "
+        >
+          <span
+            class="text-center"
+            style="
+              font-size: 14px;
+              color: rgb(31, 31, 31);
+              margin-left: 40px;
+              font-weight: 500;
+            "
+            >Electricity Bills</span
+          ><i
+            class="fa font-20 fa-lightbulb"
+            style="
+              float: right;
+              margin-right: 15px;
+              line-height: 64px;
+              color: rgb(255, 152, 0);
+            "
+          ></i>
+        </div>
+        <div
+          class="content mb-0 Services_electricityContentMargin__o6kzQ"
+        ></div>
+        <div class="content mt-2 mb-n3">
+          <div class="row" style="justify-content: space-around">
+            <div class="col-6 pe-2 col-lg-3 Services_bills_col_width__mz4gy">
+              <a href="/electricity"
+                ><span
+                  class="card card-style mx-0 mb-3"
+                  style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
+                  ><div class="card-top m-2">
+                    <span
+                      class="bg-blue-dark font-11 px-2 py-1 font-700 rounded-xs shadow-xxl Services_ikedc__FZjyC"
+                      >IKEDC</span
+                    >
+                  </div>
+                  <img
+                    src="/dashboard/images/ikeja-electric.jpg"
+                    alt="img"
+                    class="mx-auto"
+                    style="margin: 20px 0px 0px; width: 67px" /></span
+              ></a>
+            </div>
+            <div class="col-6 ps-2 col-lg-3 Services_bills_col_width__mz4gy">
+              <a href="/electricity"
+                ><span
+                  class="card card-style mx-0 mb-3"
+                  style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
+                  ><div class="card-top m-2">
+                    <span
+                      class="bg-blue-dark font-11 px-2 py-1 font-700 rounded-xs shadow-xxl Services_ibedc__KaDfF"
+                      >IBEDC</span
+                    >
+                  </div>
+                  <img
+                    src="/dashboard/images/ibedc-logo.png"
+                    alt="img"
+                    class="mx-auto"
+                    style="margin: 36px 0px 18px; width: 60px" /></span
+              ></a>
+            </div>
+            <div class="col-6 pe-2 col-lg-3 Services_bills_col_width__mz4gy">
+              <a href="/electricity"
+                ><span
+                  class="card card-style mx-0 mb-3"
+                  style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
+                  ><div class="card-top m-2">
+                    <span
+                      class="bg-blue-dark font-11 px-2 py-1 font-700 rounded-xs shadow-xxl Services_jed__MpIit"
+                      >JED</span
+                    >
+                  </div>
+                  <img
+                    src="/dashboard/images/jos-electric.jpg"
+                    alt="img"
+                    class="mx-auto"
+                    style="margin: 20px 0px 0px; width: 65px" /></span
+              ></a>
+            </div>
+            <div class="col-6 ps-2 col-lg-3 Services_bills_col_width__mz4gy">
+              <a href="/electricity"
+                ><span
+                  class="card card-style mx-0 mb-3"
+                  style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
+                  ><div class="card-top m-2">
+                    <span
+                      class="bg-blue-dark font-11 px-2 py-1 font-700 rounded-xs shadow-xxl"
+                      >PHED</span
+                    >
+                  </div>
+                  <img
+                    src="/dashboard/images/port-harcourt.jpg"
+                    alt="img"
+                    class="mx-auto"
+                    style="margin: 20px 0px 0px; width: 66.5px" /></span
+              ></a>
+            </div>
+            <div class="col-6 pe-2 col-lg-3 Services_bills_col_width__mz4gy">
+              <a href="/electricity"
+                ><span
+                  class="card card-style mx-0 mb-3"
+                  style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
+                  ><div class="card-top m-2">
+                    <span
+                      class="bg-blue-dark font-11 px-2 py-1 font-700 rounded-xs shadow-xxl Services_aedc__-CWj2"
+                      >AEDC</span
+                    >
+                  </div>
+                  <img
+                    src="/dashboard/images/Abuja-Electric.jpg"
+                    alt="img"
+                    class="mx-auto"
+                    style="margin: 20px 0px 0px; width: 67px" /></span
+              ></a>
+            </div>
+            <div class="col-6 ps-2 col-lg-3 Services_bills_col_width__mz4gy">
+              <a href="/electricity"
+                ><span
+                  class="card card-style mx-0 mb-3"
+                  style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
+                  ><div class="card-top m-2">
+                    <span
+                      class="bg-blue-dark font-11 px-2 py-1 font-700 rounded-xs shadow-xxl Services_kaedco__8-WtN"
+                      >KAEDCO</span
+                    >
+                  </div>
+                  <img
+                    src="/dashboard/images/Kaduna-Electric.jpg"
+                    alt="img"
+                    class="mx-auto"
+                    style="margin: 20px 0px 0px; width: 67px" /></span
+              ></a>
+            </div>
+            <div class="col-6 pe-2 col-lg-3 Services_bills_col_width__mz4gy">
+              <a href="/electricity"
+                ><span
+                  class="card card-style mx-0 mb-3"
+                  style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
+                  ><div class="card-top m-2">
+                    <span
+                      class="bg-blue-dark font-11 px-2 py-1 font-700 rounded-xs shadow-xxl Services_ekedc__EZV0g"
+                      >EKEDC</span
+                    >
+                  </div>
+                  <img
+                    src="/dashboard/images/eko-electric.jpg"
+                    alt="img"
+                    class="mx-auto"
+                    style="margin: 40px 0px 14px; width: 67px" /></span
+              ></a>
+            </div>
+            <div class="col-6 ps-2 col-lg-3 Services_bills_col_width__mz4gy">
+              <a href="/electricity"
+                ><span
+                  class="card card-style mx-0 mb-3"
+                  style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
+                  ><div class="card-top m-2">
+                    <span
+                      class="bg-blue-dark font-11 px-2 py-1 font-700 rounded-xs shadow-xxl Services_kedco__onU8B"
+                      >KEDCO</span
+                    >
+                  </div>
+                  <img
+                    src="/dashboard/images/Kano-Electric.jpg"
+                    alt="img"
+                    class="mx-auto"
+                    style="margin: 20px 0px 0px; width: 67px" /></span
+              ></a>
+            </div>
+            <div class="col-6 ps-3 Services_bills_col_width__mz4gy">
+              <a href="/electricity"
+                ><span
+                  class="card card-style mx-0 mb-3"
+                  style="box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px"
+                  ><div class="card-top m-2">
+                    <span
+                      class="bg-blue-dark font-11 px-2 py-1 font-700 rounded-xs shadow-xxl Services_eedc__NC+c6"
+                      >EEDC</span
+                    >
+                  </div>
+                  <img
+                    src="/dashboard/images/EEDC-Logo.jpeg"
+                    alt="img"
+                    class="mx-auto"
+                    style="
+                      margin: 40px 0px 12.5px;
+                      border-radius: 5px;
+                      width: 65px;
+                    " /></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="card card-style alert Services_bulkSMSCard__6zuhT"
+        href="/bulk-sms"
+        ><div class="d-flex py-0">
+          <div>
+            <i
+              class="fas fa-sms me-3 scale-box fa-4x color-blue-dark"
+              style="font-size: 45px"
+            ></i>
+          </div>
+          <div>
+            <p class="color-highlight mb-n1 font-12 font-600">Bulk SMS</p>
+            <p class="mb-0 font-13 font-400" style="line-height: 18px">
+              Send message to your friends and family at low cost
+            </p>
+          </div>
+          <div class="ms-auto align-self-center">
+            <div><i class="fa fa-arrow-right font-16 color-red-dark"></i></div>
+          </div></div
+      ></a>
+    </div>
+    <div class="styles-module_whatsappButton__IWx9V" aria-hidden="true">
+      <svg focusable="false" viewBox="0 0 24 24" width="55" height="55">
+        <path
+          d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"
+        ></path>
+      </svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
